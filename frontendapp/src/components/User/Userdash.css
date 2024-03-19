@@ -1,0 +1,18 @@
+.user-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 5% ;
+  }
+  
+  .user-card-container > div {
+    flex: 0 0 calc(50% - 20px); 
+    margin: 10px; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .user-card-container > div {
+      flex: 0 0 calc(100% - 20px); 
+    }
+  }
+  
