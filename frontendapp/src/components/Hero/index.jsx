@@ -18,7 +18,7 @@ export default function Hero() {
             </p>
           </section>
           <div className="w-full flex flex-col sm:w-4/5 md:flex-row justify-center gap-[18px] md:gap-[30px] lg:justify-start lg:w-4/5">
-            <Link to="/booking"><MainButton primary={true}>Book Service</MainButton></Link>
+            
           </div>
         </div>
         <div className="flex items-center justify-center lg:w-full">

@@ -10,6 +10,7 @@ import Signup from "./components/Signup";
 import Booking from "./components/Booking";
 import Payment from "./components/Payment";
 import { Suspense, lazy } from "react";
+import UserProfile from "./components/UserProfile";
 export default function App() {
   const Login = lazy(() =>  import("./components/Login"));
   return (
@@ -27,6 +28,7 @@ export default function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/booking" element={<Booking />} />
       <Route path="/payment" element={<Payment />} />
+      <Route path="/userprofile" element={<UserProfile />} />
       </Routes>
     <Footer />
     </>

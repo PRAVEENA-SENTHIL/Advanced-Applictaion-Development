@@ -63,11 +63,12 @@ export default function Navbar() {
           {/* Button */}
           <div className="hidden md:flex md:gap-4 lg:gap-[25px] items-center text-sm lg:text-base font-head font-medium">
             
-            <a href="#">
+            <a href="/userprofile">
               <button className="text-white bg-blue-800 md:py-2.5 px-4 py-3.5 px-[25px]">
                 User Profile
               </button>
             </a>
+            <Link to="/booking"><button className="text-white bg-blue-800 md:py-2.5 px-4 py-3.5 px-[25px]">Book Service</button></Link>
           </div>
         </div>
 

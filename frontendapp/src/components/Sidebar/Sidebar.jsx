@@ -29,7 +29,7 @@ function Sidebar() {
                     <BsFillGrid3X3GapFill className='icon'/> Doctors
             </li>*/}
             <li className='sidebar-list-item'>
-                    <BsFillGearFill className='icon'/> Log out
+                    <BsFillGearFill className='icon'/> <Link to={"/"}>Log out</Link>
             </li>
         </ul>
     </aside>
