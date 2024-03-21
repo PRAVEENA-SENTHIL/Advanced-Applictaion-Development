@@ -10,18 +10,19 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="user_table")
+@Table(name = "user_table")
 @Data
-@AllArgsConstructor //to manage the fields that are input
-@NoArgsConstructor // to manage the the condition where 'role' dont have an value
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    private String name;
     private String email;
     private String password;
-    private String role;
-    
+    private String roles;
+
     
 }
