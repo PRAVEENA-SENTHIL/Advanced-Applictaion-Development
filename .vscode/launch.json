@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SeniorcareApplication<seniorcare>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.backend.seniorcare.SeniorcareApplication",
+            "projectName": "seniorcare",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
