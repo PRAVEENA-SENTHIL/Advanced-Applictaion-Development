@@ -10,18 +10,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "user_table")
 @Data
-@AllArgsConstructor
+@Table(name = "availableservices")
 @NoArgsConstructor
-public class User {
-
+@AllArgsConstructor
+public class Availableservices {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String email;
-    private String phone;
-    private String password;
-    private String roles;
+    private int cost;
+    private String description;
 }

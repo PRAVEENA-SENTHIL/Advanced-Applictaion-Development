@@ -10,18 +10,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "user_table")
+@Table(name = "payment")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
-
+public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
-    private String email;
-    private String phone;
-    private String password;
-    private String roles;
+    private int userId;
+    private String status;
+    private int amount;
+    private String paymentDate;
+    private String modeOfPayment;
 }
