@@ -28,7 +28,7 @@ public class BookingController {
     @Autowired
     private BookingService bookingService;
 
-    @GetMapping("/getBooking/{id}")
+    @GetMapping("/getBooking/{bookingId}")
     @PreAuthorize("hasAuthority('ADMIN') or hasAuthority('USER')")
     public ResponseEntity<?> getBookingById(@PathVariable Integer bookingId)
     {
@@ -53,7 +53,7 @@ public class BookingController {
         return new ResponseEntity<>(newBooking, HttpStatus.CREATED);
     }
 
-    @PutMapping("/updateBooking/{bookingId}")
+    @PutMapping("/updateBooking/{bookngId}")
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<Booking> updateBooking(@NonNull @PathVariable Integer bookngId,
             @RequestBody Booking updatedBooking)

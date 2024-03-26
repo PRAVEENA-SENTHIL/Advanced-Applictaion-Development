@@ -21,5 +21,5 @@ public class Booking {
     private int userId;
     private String bookingDate;
     private String description;
-    private int bookingStatus; 
+    private String bookingStatus; 
 }

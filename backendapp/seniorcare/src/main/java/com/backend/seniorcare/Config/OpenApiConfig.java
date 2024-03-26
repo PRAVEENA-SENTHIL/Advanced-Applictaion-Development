@@ -21,9 +21,9 @@ public class OpenApiConfig {
                 server.setDescription("App Development");
 
                 Info info = new Info()
-                                .title("CourseMania")
+                                .title("Golden Years")
                                 .version("0.1")
-                                .description("swagger configuration testing.");
+                                .description("Senior home care services.");
 
                 // Define JWT security scheme
                 SecurityScheme securityScheme = new SecurityScheme()

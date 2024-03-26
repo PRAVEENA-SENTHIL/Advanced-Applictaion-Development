@@ -27,7 +27,7 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
 
-    @GetMapping("/getPayment/{id}")
+    @GetMapping("/getPayment/{paymentId}")
     @PreAuthorize("hasAuthority('ADMIN') or hasAuthority('USER')")
     public ResponseEntity<?> getPaymentById(@PathVariable Integer paymentId)
     {
@@ -54,10 +54,10 @@ public class PaymentController {
 
     @PutMapping("/updatePayment/{paymentId}")
     @PreAuthorize("hasAuthority('ADMIN')")
-    public ResponseEntity<Payment> updatePayment(@NonNull @PathVariable Integer bookngId,
+    public ResponseEntity<Payment> updatePayment(@NonNull @PathVariable Integer paymentId,
             @RequestBody Payment updatedPayment)
     {
-        Payment newPayment = paymentService.updatePayment(bookngId, updatedPayment);
+        Payment newPayment = paymentService.updatePayment(paymentId, updatedPayment);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 

@@ -27,7 +27,7 @@ public class AvailableservicesController {
     @Autowired
     private AvailableservicesService availableservicesService;
 
-    @GetMapping("/getService/{id}")
+    @GetMapping("/getService/{serviceId}")
     @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<?> getServiceById(@PathVariable Integer serviceId)
     {
